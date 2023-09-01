@@ -1,0 +1,38 @@
+:root {
+  --color-principal: #679439;
+  --color-secundary: #fff;
+  /* 
+    
+  */
+}
+
+body {
+  background-color: #000;
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+
+.layout {
+  background-color: orange;
+  min-height: 100%;
+}
+
+/* HEADER */
+.layout__header {
+  background-color: yellow;
+  
+}
+
+.header__logos {
+
+}
+
+.header__logo {
+
+}
+
+/* CONTENT */
+.layout__content {
+  background-color: yellowgreen;
+
+}
