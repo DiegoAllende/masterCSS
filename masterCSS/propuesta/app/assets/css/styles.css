@@ -20,6 +20,32 @@ body {
   font-size: 16px;
 }
 
+.hoja-border {
+  position: relative;
+}
+
+.hoja-border::before {
+
+}
+
+.hoja-border::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  position: absolute;
+  bottom: 80%;
+  transform: rotate(-90deg);
+}
+
+.hoja-border::after {
+  background-image: url('../img/hojaRigth.png');
+  right: -30px;
+}
+
 .hojas-content {
   position: relative;
 }
@@ -48,18 +74,22 @@ body {
 }
 
 /* SVG CURVAS */
-.zona1__svg-content {
-  transform: rotate(180deg);
+.curva-content {
+  background-image: url('../svg/curva.svg');
   position: absolute;
-  width: 100%;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 40px;
 }
 
-.zona1__svg {
-  fill: #fff;
-  width: 100%;
-  height: 30px;
+.curva-content-top {
+  transform: rotate(0deg);
+  top: 0;
+}
+
+.curva-content-bottom {
+  transform: rotate(180deg);
+  bottom: 0;
 }
 
 /* LAYOUT */
@@ -134,7 +164,7 @@ body {
 
 .inicio__init {
   position: relative;
-  background-image: url('../img/bosque1.jpeg');
+  background-image: url('../img/inicio.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -142,8 +172,6 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  /* clip-path: circle(80vh at 50% 50%); */
-  /* clip-path: url(#mask1); */
 }
 
 .init__content {
@@ -203,10 +231,168 @@ body {
   transform: rotate(45deg);
 }
 
-.inicio__zona2 {
-  background-color: aquamarine;
+/* INICIO - BIENVENIDA */
+.inicio__bienvenida {
+  background-color: #fff;
+  padding: 2rem 0px;
 }
 
+.bienvenida__content {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.bienvenida__info {
+  flex-basis: 40%;
+}
+
+.bienvenida__logo {
+
+}
+
+.bienvenida__logo__img {
+  width: 130px;
+}
+
+.bienvenida__titulo-content {
+  padding: 1rem;
+}
+
+.bienvenida__titulo {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+
+}
+
+.bienvenida__titulo2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+
+}
+
+.bienvenida__subtitulo-content {
+  display: inline-block;
+  background-color: var(--color-resaltar);
+  border-radius: 0px 10px 0px 10px;
+  padding: 0.5rem 1rem;
+}
+
+.bienvenida__subtitulo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+.bienvenida__subtitulo2 {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 1rem;
+
+}
+
+.bienvenida__imagen {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bienvenida__img {
+  max-width: 100%;
+  height: calc(100% - 50px);
+  border-radius: 50px 0px 50px 0px;
+  margin: 0;
+
+}
+
+/* INICIO - SLIDER */
+.inicio__slider {
+  position: relative;
+}
+
+.slider__content {
+  width: 100%;
+  height: 80vh;
+}
+
+.slider__list {
+  background-color: #679439;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+}
+
+.slider__item:first-child {
+  opacity: 1;
+}
+
+.slider__item:target {
+  opacity: 1;
+}
+
+.slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__numeros {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.slider__num {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  color: var(--color-resaltar);
+  background-color: var(--color-resaltar);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.slider__num__a {
+  display: inline-block;
+ text-decoration: none;
+ color: inherit;
+ width: 100%;
+ height: 100%;
+}
+/* .slider__img {
+  width: 100%;
+  height: calc(100vh - 150px);
+} */
+
+/* INICIO - SOBRE LA PLATAFORMA */
 .inicio__zona3 {
   background-color: cadetblue;
 }

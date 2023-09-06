@@ -25,7 +25,7 @@ body {
   line-height: 1.5;
 }
 
-ul, ol {
+/* ul, ol {
   list-style: none;
 }
 
@@ -35,20 +35,20 @@ a {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-}
+} */
 
-p a {
+/* p a {
   display: inline;
-}
+} */
 
-img, video, iframe, picture, figure {
+/* img, video, iframe, picture, figure {
   max-width: 100%;
   display: block;
-}
+} */
 
-form, input, select, textarea, button, label {
+/* form, input, select, textarea, button, label {
   display: block;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-}
+} */
