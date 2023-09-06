@@ -1,10 +1,16 @@
 :root {
   --color-principal: #679439;
-  --color-secundary: #fff;
+  --color-secondary: #fff;
+  --color-terciario : #BBBCBF;
   --color-resaltar: #E4A32F;
   --color-flecha: #CFDA40;
+  --color-aux1: #B5C981;
+  --color-aux2: #80902E;
+  --color-footer: #1E1F24;
   /* 
     #CFDA40
+    #B5C981
+    #80902E
   */
 }
 
@@ -17,7 +23,9 @@ body {
 .hojas-content {
   position: relative;
 }
-.hojas-content::before, .hojas-content::after {
+
+.hojas-content::before,
+.hojas-content::after {
   content: '';
   width: 60px;
   height: 60px;
@@ -39,6 +47,22 @@ body {
   right: -70px;
 }
 
+/* SVG CURVAS */
+.zona1__svg-content {
+  transform: rotate(180deg);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.zona1__svg {
+  fill: #fff;
+  width: 100%;
+  height: 30px;
+}
+
+/* LAYOUT */
 .layout {
   background-color: orange;
   min-height: 100%;
@@ -46,7 +70,10 @@ body {
 
 /* HEADER */
 .layout__header {
-  background-color: var(--color-secundary);
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  background-color: var(--color-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,16 +111,14 @@ body {
   border: 1px solid var(--color-principal);
 }
 
-.menu__search {
-
-}
+.menu__search {}
 
 .menu__input {
   padding: 0.25rem 1rem;
   border-radius: 50px;
   border: 1px solid var(--color-principal);
   outline: none;
-  background-color: var(--color-secundary);
+  background-color: var(--color-secondary);
 }
 
 .menu__input::placeholder {
@@ -102,56 +127,58 @@ body {
 
 /* CONTENT */
 .layout__content {
-  background-color: var(--color-secundary);
+  background-color: var(--color-secondary);
 }
 
-.content__inicio {
+.content__inicio {}
 
-}
-
-.inicio__zona1 {
+.inicio__init {
   position: relative;
   background-image: url('../img/bosque1.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* height: 100vh; */
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* clip-path: circle(80vh at 50% 50%); */
+  /* clip-path: url(#mask1); */
+}
+
+.init__content {
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* clip-path: circle(80vh at 50% 50%); */
-  clip-path: url(#mask1);
 }
 
-.zona1__svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.zona1__title {
-  color: var(--color-secundary);
-  font-size: 2.8rem;
-  font-weight: 600;
-  line-height: 1.1;
-  text-align: center;
-  width: 70%;
-  margin-bottom: 0.5rem;
-}
-
-.zona1__subtitle {
-  color: var(--color-secundary);
+.init__titulo {
+  color: var(--color-secondary);
   font-size: 1.5rem;
-  background-color: var(--color-resaltar);
-  padding: 0.5rem 1.5rem;
-  border-top-right-radius: 16px;
-  border-bottom-left-radius: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
+.init__subtitulo {}
 
+.init__subtitle {
+  color: var(--color-secondary);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.init__subtitle--aux1 {
+  color: var(--color-aux1);
+}
+
+.init__subtitle--aux2 {
+  color: var(--color-aux2);
+}
 
 .zona1__content-flecha {
   display: flex;
@@ -184,10 +211,71 @@ body {
   background-color: cadetblue;
 }
 
-.inicio__zona3 {
-  
+.inicio__zona3 {}
+
+.content__sobre {}
+
+/* FOOTER */
+.layout__footer {
+  padding: 3rem 5rem;
+  background-color: var(--color-footer);
+  color: var(--color-secondary);
 }
 
-.content__sobre {
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer__info-content {}
+
+.footer__titulo {
+  font-size: 1.6rem;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer__info__content {
+  margin-top: 1.5rem;
+}
+
+.footer__info__titulo {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__info__data {
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin: 0px;
+  color: var(--color-terciario);
+  line-height: 1.2;
+}
+
+.footer__logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer__logo {
+  width: 290px;
+}
+
+.footer__linea {
+  margin: 1rem 0px 2rem 0px;
+  border-color: var(--color-terciario);
+}
+
+.footer__copy {
+  color: var(--color-terciario);
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin: 0px;
 }
