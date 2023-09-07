@@ -475,14 +475,15 @@ body {
   font-weight: 400;
 }
 
-/* INICIO - SOBRE LA PLATAFORMA */
+/* SOBRE LA PLATAFORMA */
 .content__sobre {
   background-color: #fff;
-  margin-bottom: var(--mgb-content);
-  padding: 0px var(--pd-content-layout);
 }
 
+/* INICIO - SOBRE - HEADER */
 .sobre__header {
+  padding: 0px var(--pd-content-layout);
+  margin-bottom: var(--mgb-content);
   text-align: center;
 }
 
@@ -500,6 +501,21 @@ body {
   font-weight: 600;
   margin: 0;
   padding: 0;
+}
+
+/* SOBRE - ACORDION */
+.sobre__acordion {
+  margin-bottom: var(--mgb-content);
+}
+
+.acordion__content {
+  max-width: var(--width-content-layout);
+  padding: 0px var(--pd-content-layout);
+  margin: 0 auto;
+}
+
+.acordion__content__acordion {
+  padding: 0px var(--pd-content);
 }
 
 /* FOOTER */
