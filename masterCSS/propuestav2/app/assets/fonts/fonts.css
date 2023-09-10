@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../fonts/font-landing/BebasNeueBold.otf') format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/font-landing/Raleway-VariableFont_wght.ttf') format("truetype");
+    font-style: normal;
+}
