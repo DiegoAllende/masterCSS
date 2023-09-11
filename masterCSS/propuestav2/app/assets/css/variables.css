@@ -1,37 +1,40 @@
 :root {
     --color-principal: #498D3E;
     --color-secondary: #fff;
+    --color-terciario: #BBBBBB;
     --color-resaltar: #ED981A;
+    --color-card-alert: rgba(237, 152, 26, 0.2);
     --color-text: #333333;
     --color-flecha: #C2CD42;
-    
+    --color-footer: #1E2025;
+
     --pd-x-header-foot: 85px;
     --pd-y-header: 20px;
     --pd-y-foot: 60px;
     --mgb-content: 64px;
-
-    --border-radius-img: 16px;
-
+    
     --font-bebas-bold: 'BebasNeueBold', sans-serif;
     --font-raleway: 'Raleway', sans-serif;
+    --font-size-subtitle: 16px;
+    --font-size-article: 10px;
+    --fonst-size-mensaje: 13px;
+    --mgb-list-item: 10px;
+    --border-radius-img: 12px;
 
 
 
-    --color-terciario: #BBBCBF;
+
     --color-aux1: #B5C981;
     --color-aux2: #80902E;
-    --color-footer: #1E1F24;
     --bg-btn-ir: #9E5647;
     --width-content-layout: 1000px;
     --pd-content-layout: 16px;
     --pd-content: 16px;
-    --mgb-list-item: 8px;
     --mgb-sepacion2: 24px;
     --img-gradiente-left: 90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 60%;
     --img-gradiente-all: 90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 60%;
     --fonst-size-alert: 0.6rem;
     --fonst-size-acordion: 0.6rem;
-    --fonst-size-mensaje: 0.9rem;
 }
 
 
@@ -48,11 +51,12 @@
     line-height: 1.5 !important;
     padding-right: 5px;
 }
+
 /* CARD DE TEXTO RESALTADO */
 .card-resaltar {
     display: inline-block;
     background-color: var(--color-resaltar);
-    border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 6px 0px 6px;
     padding: 0.5rem var(--pd-content-layout);
 }
 
@@ -61,13 +65,97 @@
     font-weight: 600;
     color: #fff;
 }
+
 /* ************************************ */
 
+.clear-both {
+    clear: both;
+}
+
+.card-alert {
+    background-color: var(--color-card-alert);
+    font-size: var(--font-size-article);
+    font-weight: 500;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0px 14px 0px 14px;
+    line-height: 1.5;
+}
+
+.card-alert * {
+    line-height: 1.3;
+}
+
+/* LISTA ESTILO FLECHA PARA LANDING PAGE */
+.lista-flecha__list {
+    list-style: none;
+}
+
+.lista-flecha__item {
+    font-size: var(--font-size-article);
+    margin-bottom: var(--mgb-list-item);
+    display: flex;
+    gap: 5px;
+}
+
+.lista-flecha__item__span {
+    flex-basis: 100%;
+    line-height: 1.3;
+}
+
+.lista-flecha__item::before {
+    content: '';
+    background-image: url('../img/img/landingpage/icons/list-flecha.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 10px;
+    height: 10px;
+}
+
+/* LISTA ESTILO NUMERICA PARA LANDING PAGE */
+.lista-num-lan {
+    list-style: none;
+    counter-reset: li;
+    margin: 0 18px 0 1rem;
+    padding-left: calc(1rem + 3px);
+}
+
+.lista-num-lan--border {
+    border-left: 1px solid var(--color-principal);
+}
+
+.lista-num-lan>li {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.lista-num-lan>li::after {
+    position: absolute;
+    content: counter(li);
+    counter-increment: li;
+    top: 0;
+    left: -2rem;
+    color: #fff;
+    background: var(--color-resaltar);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
+}
+
+/* ********************************** */
 
 
+
+/*  */
 .sin-borde {
     border: 0 !important;
 }
+
 /* SVG CURVAS */
 .curva-content {
     background-image: url('../svg/curva.svg');
@@ -141,66 +229,6 @@
 }
 
 /* ********************************** */
-/* BORDER CON LINEA Y HOJA */
-.line-border {
-    position: relative;
-    display: inline-block;
-    border-bottom: 2px solid var(--color-resaltar);
-    padding-bottom: 3px;
-    padding-right: 15px;
-}
-
-.line-border::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
-    background-image: url('../img/landing/hoja.png');
-    right: -18px;
-    bottom: -2px;
-}
-
-/* ********************************** */
-/* LISTA NUMERICA ESTILO PARA LANDING PAGE */
-.lista-num-lan {
-    list-style: none;
-    counter-reset: li;
-    margin: 0 18px 0 1rem;
-    padding-left: calc(1rem + 3px);
-}
-
-.lista-num-lan--border {
-    border-left: 1px solid var(--color-principal);
-}
-
-.lista-num-lan>li {
-    position: relative;
-    padding-bottom: 1rem;
-    margin-top: 1rem;
-}
-
-.lista-num-lan>li::after {
-    position: absolute;
-    content: counter(li);
-    counter-increment: li;
-    top: 0;
-    left: -2rem;
-    color: #fff;
-    background: var(--color-resaltar);
-    font-weight: bold;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 0.9rem;
-    height: 1.5rem;
-    width: 1.5rem;
-    line-height: 1.5rem;
-}
-
-/* ********************************** */
 .button-ir span {
     display: inline-block;
     color: var(--color-secondary);
@@ -214,33 +242,14 @@
     cursor: pointer;
 }
 
-.info-alert {
-    font-size: var(--fonst-size-alert);
-    padding: 1rem;
-    background-color: #F4E7D6;
-    border-radius: 0px 14px 0px 14px;
-}
 
-.lista-flecha__list {
-    list-style: none;
-}
 
-.lista-flecha__item {
-    font-size: var(--fonst-size-acordion);
-    margin-bottom: var(--mgb-list-item);
-    display: flex;
-    gap: 5px;
-}
-
-.lista-flecha__item__span {
-    flex-basis: 100%;
-}
 
 .header-tab {
     background-color: var(--color-principal);
     height: 50px;
     color: var(--color-secondary);
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     padding: 1rem 4rem;
 }
