@@ -266,7 +266,6 @@ body {
   height: 100%;
   width: 100%;
   max-width: var(--width-content-layout);
-  padding: 0 var(--pd-content);
   margin: 0 auto;
 }
 
@@ -304,42 +303,40 @@ body {
 
 /* SOBRE LA PLATAFORMA */
 .content__sobre {
-  background-color: #fff;
+  max-width: var(--width-content-layout);
+  padding: 0px var(--pd-content-layout);
+  margin: 0 auto;
 }
 
-/* INICIO - SOBRE - HEADER */
-.sobre__header {
-  padding: 0px var(--pd-content-layout);
-  margin-bottom: var(--mgb-content);
+/* SOBRE - HEADER */
+.sobre-header {
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.sobre__header__imagen {
+.sobre-header-imagen {
   margin-bottom: 1rem;
 }
 
-.sobre__header__img {
-  max-width: 120px;
+.sobre-header-img {
+  height: 90px;
+  display: inline-block !important;
 }
 
-.sobre__header__titulo {
-  text-align: center;
-  font-size: 1rem;
+.sobre-header-titulo {
+  font-family: var(--font-bebas-bold);
+  font-size: 25px;
   font-weight: 600;
-  margin: 0;
-  padding: 0;
+  padding: 0 8px;
 }
 
 /* SOBRE - ACORDION */
 .sobre__acordion {
-  padding: 0px var(--pd-content-layout);
   margin-bottom: var(--mgb-content);
 }
 
 .acordion__content {
-  max-width: var(--width-content-layout);
-  padding: 0px var(--pd-content);
-  margin: 0 auto;
+  
 }
 
 .acordion__content__acordion {
