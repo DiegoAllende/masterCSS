@@ -7,23 +7,19 @@
     --color-text: #333333;
     --color-flecha: #C2CD42;
     --color-footer: #1E2025;
-
     --pd-x-header-foot: 85px;
     --pd-y-header: 20px;
     --pd-y-foot: 60px;
     --mgb-content: 64px;
-    
     --font-bebas-bold: 'BebasNeueBold', sans-serif;
     --font-raleway: 'Raleway', sans-serif;
     --font-size-subtitle: 16px;
+    --font-size-subindice: 8px;
     --font-size-article: 10px;
     --fonst-size-mensaje: 13px;
     --mgb-list-item: 10px;
     --border-radius-img: 12px;
-
-
-
-
+    /* *************+ */
     --color-aux1: #B5C981;
     --color-aux2: #80902E;
     --bg-btn-ir: #9E5647;
@@ -61,12 +57,10 @@
 }
 
 .card-resaltar>* {
-    font-size: 0.9rem;
+    font-size: var(--font-size-subtitle);
     font-weight: 600;
     color: #fff;
 }
-
-/* ************************************ */
 
 .clear-both {
     clear: both;
@@ -101,6 +95,7 @@
 .lista-flecha__item__span {
     flex-basis: 100%;
     line-height: 1.3;
+    font-size: var(--font-size-article);
 }
 
 .lista-flecha__item::before {
@@ -116,7 +111,7 @@
 .lista-num-lan {
     list-style: none;
     counter-reset: li;
-    margin: 0 18px 0 1rem;
+    margin: 0 0 0 1rem;
     padding-left: calc(1rem + 3px);
 }
 
@@ -127,7 +122,7 @@
 .lista-num-lan>li {
     position: relative;
     padding-bottom: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .lista-num-lan>li::after {
@@ -147,11 +142,41 @@
     line-height: 1.5rem;
 }
 
-/* ********************************** */
+.button-ir span {
+    display: inline-block;
+    color: var(--color-secondary);
+    background-color: var(--color-principal);
+    width: 1.5rem;
+    height: 1rem;
+    text-align: center;
+    font-size: 0.6rem;
+    line-height: 1rem;
+    border-radius: 0 5px 0 5px;
+    cursor: pointer;
+}
 
+.texto-acordion {
+    font-size: var(--font-size-article);
+    margin-top: var(--mgb-list-item);
+    margin-bottom: var(--mgb-list-item);
+    font-weight: 500;
+    line-height: 1.5;
+}
 
+.texto-indice {
+    font-size: var(--font-size-subindice);
+    font-weight: 500;
+    text-align: end;
+}
 
-/*  */
+.card-image {
+    border-radius: var(--border-radius-img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    background-color: #58514F;
+}
+
 .sin-borde {
     border: 0 !important;
 }
@@ -176,80 +201,34 @@
     bottom: 0;
 }
 
-/* ********************************** */
-/* HOJAS EN LOS EXTREMOS */
-.hojas-content {
-    position: relative;
-}
-
-.hojas-content::before,
-.hojas-content::after {
-    content: '';
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
-    top: -25px;
-}
-
-.hojas-content::before {
-    background-image: url('../img/hojaLeft.png');
-    left: -70px;
-}
-
-.hojas-content::after {
-    background-image: url('../img/hojaRigth.png');
-    right: -70px;
-}
+/* FLOAT IMAGEN */
+.float-imagen--right {
+    float: right;
+    margin-left: 1rem;
+    min-width: 200px;
+    width: 38%;
+  }
+  
+  .float-imagen--left {
+    float: left;
+    margin-right: 1rem;
+    min-width: 200px;
+    width: 45%;
+  }
+  
+  .float-imagen--right img,
+  .float-imagen--left img {
+    border-radius: var(--border-radius-img);
+    object-fit: cover;
+    height: 100%;
+  }
 
 /* ********************************** */
-/* HOJA EN EL EXTREMO DERECHO */
-.hoja-border {
-    position: relative;
-    display: inline-block;
-    padding-right: 15px;
-}
-
-.hoja-border::after {
-    content: '';
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
-    transform: rotate(-90deg);
-    background-image: url('../img/hojaRigth.png');
-    right: -18px;
-    bottom: 100%;
-}
-
-/* ********************************** */
-.button-ir span {
-    display: inline-block;
-    color: var(--color-secondary);
-    background-color: var(--bg-btn-ir);
-    width: 1.5rem;
-    height: 1rem;
-    text-align: center;
-    font-size: 0.6rem;
-    line-height: 1rem;
-    border-radius: 0 5px 0 5px;
-    cursor: pointer;
-}
-
-
-
-
 .header-tab {
     background-color: var(--color-principal);
     height: 50px;
     color: var(--color-secondary);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     padding: 1rem 4rem;
 }

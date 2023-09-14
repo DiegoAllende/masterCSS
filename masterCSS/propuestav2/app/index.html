@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="./assets/js/index.js"></script>
   <title>PORTAFOLIO</title>
 </head>
 
@@ -20,7 +21,7 @@
         <img class="header-logos-logo" src="./assets/img/MPV-05.png" alt="minagri">
       </section>
       <section class="header-icons">
-        <img class="header-icons-icon" src="./assets/img/img/landingpage/icons/email.png" alt="correo">
+        <img class="header-icons-icon header-icons-icon-sm" src="./assets/img/img/landingpage/icons/email.png" alt="correo">
         <img class="header-icons-icon" src="./assets/img/img/landingpage/icons/info.png" alt="información">
         <img class="header-icons-icon" src="./assets/img/img/landingpage/icons/world.png" alt="mundo">
         <img class="header-icons-icon" src="./assets/img/img/landingpage/icons/user.png" alt="usuario">
@@ -32,8 +33,8 @@
         </section>
         <nav class="header-menu__nav">
           <ul class="header-menu__list">
-            <li class="header-menu__link header-menu__link--border">INICIO</li>
-            <li class="header-menu__link header-menu__link--border">SOBRE LA PLATAFORMA</li>
+            <li class="header-menu__link header-menu__link--border"><a href="#">INICIO</a></li>
+            <li class="header-menu__link header-menu__link--border"><a href="#sobre">SOBRE LA PLATAFORMA</a></li>
             <li class="header-menu__link">CONSULTAS</li>
           </ul>
         </nav>
@@ -179,7 +180,7 @@
         </section>
       </section>
 
-      <section class="content__sobre">
+      <section id="sobre" tabindex="-1" class="content__sobre">
         <section class="sobre-header">
           <section class="sobre-header-imagen">
             <img class="sobre-header-img" src="./assets/img/img/landingpage/figures/persons.png" alt="personas">
@@ -196,40 +197,39 @@
                     madera en nuestro país, que cuentan con iniciativas calificadas por el Estado peruano como buenas
                     prácticas en el comercio de madera.</p>
                 </div>
-                <section class="acordion-one-imagen--right">
-                  <img src="./assets/img/img/landingpage/sobre1.jpg" alt="imagen">
-                </section>
-                <section class="acordion-one-data">
-                  <p class="acordion-one-data-texto">A través de la plataforma se pueden realizar consultas y obtener
-                    reportes a partir de diferentes filtros (buenas prácticas, departamento, productos, especies,
-                    proveedor, RUC, entre otras).</p>
-                  <p class="acordion-one-data-texto">Asimismo, la plataforma permite emitir una ficha con información de
-                    cada proveedor, conteniendo información de contacto, productos que oferta, buenas prácticas y otra
-                    información de interés para quienes la consultan.</p>
-                  <p class="acordion-one-data-texto">Siendo los reconocimientos públicos un incentivo del Estado a
-                    quienes desarrollan buenas prácticas, a través de la plataforma se emiten Constancias de
-                    Reconocimiento por la implementación de buenas prácticas por el proveedor.</p>
-                  <section class="acordion-one-data-msj">
-                    <img class="acordion-one-data-msj-img" src="./assets/img/img/landingpage/figures/round-ensign.png"
-                      alt="figura de una insignia">
-                    <p class="acordion-one-data-msj-text">La plataforma realiza también un reconocimiento, a través de
-                      Constancias de Reconocimiento, a los
-                      regentes forestales que apoyan la implementación de buenas prácticas por parte de sus regentados.
-                    </p>
+                <div class="acordion-one-data">
+                  <section class="acordion-one-data-info">
+                    <p class="texto-acordion">A través de la plataforma se pueden realizar consultas y obtener
+                      reportes a partir de diferentes filtros (buenas prácticas, departamento, productos, especies,
+                      proveedor, RUC, entre otras).</p>
+                    <p class="texto-acordion">Asimismo, la plataforma permite emitir una ficha con información de
+                      cada proveedor, conteniendo información de contacto, productos que oferta, buenas prácticas y otra
+                      información de interés para quienes la consultan.</p>
+                    <p class="texto-acordion">Siendo los reconocimientos públicos un incentivo del Estado a
+                      quienes desarrollan buenas prácticas, a través de la plataforma se emiten Constancias de
+                      Reconocimiento por la implementación de buenas prácticas por el proveedor.</p>
+                    <section class="acordion-one-data-info-msj">
+                      <img class="acordion-one-data-info-msj-img"
+                        src="./assets/img/img/landingpage/figures/round-ensign.png" alt="figura de una insignia">
+                      <p class="acordion-one-data-info-msj-text">La plataforma realiza también un reconocimiento, a
+                        través de
+                        Constancias de Reconocimiento, a los
+                        regentes forestales que apoyan la implementación de buenas prácticas por parte de sus
+                        regentados.
+                      </p>
+                    </section>
                   </section>
-                </section>
-                <div class="clear-both"></div>
+                  <section class="acordion-one-data-imagen card-image"></section>
+                </div>
               </section>
             </section>
 
             <div class="header-tab">Objetivos de la Plataforma</div>
             <section class="acordion__content__acordion">
               <section class="acordion-two">
-                <section class="acordion-one-imagen--left">
-                  <img src="./assets/img/img/landingpage/sobre2.jpg" alt="imagen">
-                </section>
-                <section>
-                  <p class="acordion-one-data-texto">Los objetivos de la Plataforma son:</p>
+                <section class="acordion-two-imagen card-image"></section>
+                <section class="acordion-two-data">
+                  <p class="texto-acordion">Los objetivos de la Plataforma son:</p>
                   <ul class="lista-flecha__list">
                     <li class="lista-flecha__item"><span class="lista-flecha__item__span">Reducir el riesgo de madera
                         ilegal en las adquisiciones de madera y sus productos, tanto en las compras realizadas por el
@@ -247,20 +247,20 @@
                         calificaciones por la adopción de tales prácticas.</span></li>
                   </ul>
                 </section>
-                <div class="clear-both"></div>
               </section>
             </section>
 
             <div class="header-tab">Buenas prácticas reconocidas en la Plataforma</div>
             <section class="acordion__content__acordion">
-              <section class="acordion__three">
-                <section class="acordion__three__indice">
-                  <section>
-                    <p class="acordion__three__alert card-alert">Considerando la posibilidad de contar con información
-                      actualizada, confiable y puesta a disposición para su consumo por la plataforma, la plataforma ha
-                      incorporado seis buenas prácticas, las mismas que son acreditadas por el SERFOR, por el OSINFOR y
-                      por
-                      la certificación internacional FSC. Estas buenas prácticas son:</p>
+              <section class="acordion-three">
+                <section class="acordion-three-indice">
+                  <section class="acordion-three-indice-data">
+                    <div class="acordion-three-alert card-alert">
+                      <p>Considerando la posibilidad de contar con información actualizada, confiable y puesta a
+                        disposición para su consumo por la plataforma, la plataforma ha incorporado seis buenas
+                        prácticas, las mismas que son acreditadas por el SERFOR, por el OSINFOR y por la certificación
+                        internacional FSC. Estas buenas prácticas son:</p>
+                    </div>
                     <ol class="acordion__three__list">
                       <li class="acordion__three__item">
                         <span class="acordion__three__item__span">Uso del Libro de Operaciones
@@ -268,20 +268,20 @@
                           por
                           el
                           SERFOR</span>
-                        <span class="button-ir"><span>Ir</span></span>
+                        <span class="button-ir"><span id="btn-bp-1">Ir</span></span>
                       </li>
                       <li class="acordion__three__item"><span class="acordion__three__item__span">Uso del Libro de
                           Operaciones
                           Electrónico de Centros de Transformación Primaria (LOE-CTP), acreditado por el Módulo de
                           Control
                           conducido por el SERFOR</span>
-                        <span class="button-ir"><span>Ir</span></span>
+                        <span class="button-ir"><span id="btn-bp-2">Ir</span></span>
                       </li>
                       <li class="acordion__three__item">
                         <span class="acordion__three__item__span">Calificación “Muy bueno” en el Reporte de Títulos
                           Habilitantes Supervisados con Buen Comportamiento, acreditada por el SIGOSFC del
                           Osinfor</span>
-                        <span class="button-ir"><span>Ir</span></span>
+                        <span class="button-ir"><span id="btn-bp-3">Ir</span></span>
                       </li>
                       <li class="acordion__three__item">
                         <div>
@@ -289,111 +289,156 @@
                           <ol class="acordion__three__list4">
                             <li class="acordion__three__item4">
                               <span>Certificación de Manejo Forestal (FM/COC), acreditada por el FSC</span>
-                              <span class="button-ir"><span>Ir</span></span>
+                              <span class="button-ir"><span id="btn-bp-4-1">Ir</span></span>
                             </li>
                             <li class="acordion__three__item4">
                               <span>Certificación de madera controlada (FM/CW), acreditada por el FSC</span>
-                              <span class="button-ir"><span>Ir</span></span>
+                              <span class="button-ir"><span id="btn-bp-4-2">Ir</span></span>
                             </li>
                             <li class="acordion__three__item4">
                               <span>Certificación de cadena de custodia (COC), acreditada por el FSC</span>
-                              <span class="button-ir"><span>Ir</span></span>
+                              <span class="button-ir"><span id="btn-bp-4-3">Ir</span></span>
                             </li>
                           </ol>
                         </div>
-                        <span class="button-ir"><span>Ir</span></span>
+                        <span class="button-ir"><span id="btn-bp-4">Ir</span></span>
                       </li>
                     </ol>
                   </section>
-                  <section>
-                    <img class="acordion__three__img" src="./assets/img/slider/slider4.png" alt="imagen">
-                  </section>
+                  <section class="acordion-three-indice-imagen card-image"></section>
                 </section>
 
-                <section class="acordion__three__resumen1">
+                <section class="acordion-three-resumen1">
+                  <h2 class="acordion-three-resumen1-title">Descripción de las buenas prácticas <br> reconocidas en la
+                    plataforma:</h2>
                   <ul class="lista-num-lan lista-num-lan--border resumen1__list">
-                    <li class="border-title-block resumen1__item">
-                      <span class="resumen1__item__titulo">Uso de Libro de operaciones electrónico de títulos
-                        habilitantes (LOE-TH)</span>
+                    <li class="resumen1__item border-title-block" id="resp-bp-1" tabindex="-1">
+                      <section class="float-imagen--right">
+                        <img src="./assets/img/img/landingpage/sobre3-1.jpg" alt="imagen">
+                      </section>
+                      Uso de Libro de operaciones electrónico de títulos habilitantes (LOE-TH)
                       <section class="resumen1__item__info">
-                        <section class="resumen1__item__info__data">
-                          <section>
-                            <img class="resumen1__item__info__img" src="./assets/img/slider/slider4.png" alt="imagen">
-                          </section>
-                          <section class="resumen1__item__info__textos">
-                            <p class="resumen1__item__info__texto">El LOE-TH es un aplicativo del Módulo de Control del
-                              Sistema Nacional de Información Forestal y de Fauna Silvestre (MC-SNIFFS), conducido por
-                              el SERFOR, en la actualidad de uso voluntario por los titulares de los títulos
-                              habilitantes que aprovechan madera (concesiones, permisos y autorizaciones) y que permite
-                              transparentar la información de la trazabilidad de la madera desde el árbol en pie
-                              debidamente codificado en el censo, pasando por el registro de los árboles talados,
-                              trozados, transformados en bosque si fuera el caso, el despacho de las trozas y/o el
-                              despacho de productos transformados si correspondiera, hacia los centros de
-                              transformación, lugares de acopio, depósitos y centros de comercialización. En todo este
-                              proceso se mantiene una correlación con la codificación de origen, aprobada en el plan de
-                              manejo forestal.</p>
-                            <p class="resumen1__item__info__texto">La información del LOE-TH es disponible tanto para
-                              la autoridad de la jurisdicción como para el SERFOR en su condición de autoridad nacional
-                              y permite conocer en tiempo real la situación de las trozas (taladas, trozadas, acopiadas
-                              para despacho y despachadas), así como de los árboles censados y aprobados en el plan de
-                              manejo forestal que se encuentran todavía en pie.</p>
-                            <p class="resumen1__item__info__texto">El usuario que adopta el LOE-TH, emite las guías de
-                              transporte forestal a través de él, y éstas cuentan con código QR que puede ser leído por
-                              la autoridad durante el recorrido de las trozas o productos a su primer destino con
-                              cualquier dispositivo en que se descargue la aplicación.</p>
-                          </section>
-
+                        <section>
+                          <p class="texto-acordion">El LOE-TH es un aplicativo del Módulo de Control del
+                            Sistema Nacional de Información Forestal y de Fauna Silvestre (MC-SNIFFS), conducido por
+                            el SERFOR, en la actualidad de uso voluntario por los titulares de los títulos
+                            habilitantes que aprovechan madera (concesiones, permisos y autorizaciones) y que permite
+                            transparentar la información de la trazabilidad de la madera desde el árbol en pie
+                            debidamente codificado en el censo, pasando por el registro de los árboles talados,
+                            trozados, transformados en bosque si fuera el caso, el despacho de las trozas y/o el
+                            despacho de productos transformados si correspondiera, hacia los centros de
+                            transformación, lugares de acopio, depósitos y centros de comercialización. En todo este
+                            proceso se mantiene una correlación con la codificación de origen, aprobada en el plan de
+                            manejo forestal.</p>
+                          <p class="texto-acordion">La información del LOE-TH es disponible tanto para
+                            la autoridad de la jurisdicción como para el SERFOR en su condición de autoridad nacional
+                            y permite conocer en tiempo real la situación de las trozas (taladas, trozadas, acopiadas
+                            para despacho y despachadas), así como de los árboles censados y aprobados en el plan de
+                            manejo forestal que se encuentran todavía en pie.</p>
+                          <p class="texto-acordion">El usuario que adopta el LOE-TH, emite las guías de
+                            transporte forestal a través de él, y éstas cuentan con código QR que puede ser leído por
+                            la autoridad durante el recorrido de las trozas o productos a su primer destino con
+                            cualquier dispositivo en que se descargue la aplicación.</p>
                         </section>
+                        <div class="clear-both"></div>
                       </section>
                     </li>
-                    <li class="eslabones__item border-title-block">
-                      <span class="eslabones-item-titulo">Uso de Libro de Operaciones Electrónico de Centros de
-                        Transformación Primaria (LOE-CTP)</span>
-                      <section class="eslabones-item-info">
-                        <section class="eslabones-item-info-data">
-                          <section>
-                            <img src="./assets/img/slider/slider4.png" alt="imagen">
-                          </section>
-                          <section>
-                            <p class="acordion-one-data-texto">El LOE-CTP es un aplicativo del Módulo de Control
-                              del Sistema Nacional de Información Forestal y de Fauna Silvestre (MC-SNIFFS), mediante la
-                              cual los titulares de dichos centros registran y actualizan la información de ingresos y
-                              salidas de los productos y subproductos forestales maderables.</p>
-                            <p class="acordion-one-data-texto">Su adopción es en la actualidad voluntaria por los
-                              titulares de los centros de transformación primaria que procesan madera y permite
-                              transparentar la información de la trazabilidad de la madera desde el ingreso de las
-                              trozas a dichos centros, su procesamiento o consumo, los productos obtenidos y la salida
-                              de dichos productos hacia su siguiente destino. En todo este proceso se mantiene una
-                              correlación, por lotes de madera procesada, con la codificación de origen, a partir de las
-                              guías de transporte forestal con las cuales se ingresó la materia prima al centro de
-                              transformación.</p>
-                            <p class="acordion-one-data-texto">La información de LOE-CTP es disponible tanto para
-                              la autoridad de la jurisdicción como para la autoridad nacional y permite conocer en
-                              tiempo real los productos disponibles, así como la disponibilidad de trozas que aún no han
-                              sido utilizadas y se encuentran dentro del CTP.</p>
-                            <p class="acordion-one-data-texto">El usuario que adopta el LOE-CTP emite las guías de
-                              transporte forestal a través de él y éstas cuentan con código QR que puede ser leído por
-                              la autoridad durante el recorrido de los productos a su siguiente destino con cualquier
-                              dispositivo en que se descargue la aplicación.</p>
-                          </section>
-
+                    <li class="resumen1__item border-title-block" id="resp-bp-2" tabindex="-1">
+                      <section class="float-imagen--right">
+                        <img src="./assets/img/img/landingpage/sobre3-2.jpg" alt="imagen">
+                      </section>
+                      Uso de Libro de Operaciones Electrónico de Centros de Transformación Primaria (LOE-CTP)
+                      <section class="resumen1__item__info">
+                        <section>
+                          <p class="texto-acordion">El LOE-CTP es un aplicativo del Módulo de Control
+                            del Sistema Nacional de Información Forestal y de Fauna Silvestre (MC-SNIFFS), mediante la
+                            cual los titulares de dichos centros registran y actualizan la información de ingresos y
+                            salidas de los productos y subproductos forestales maderables.</p>
+                          <p class="texto-acordion">Su adopción es en la actualidad voluntaria por los
+                            titulares de los centros de transformación primaria que procesan madera y permite
+                            transparentar la información de la trazabilidad de la madera desde el ingreso de las
+                            trozas a dichos centros, su procesamiento o consumo, los productos obtenidos y la salida
+                            de dichos productos hacia su siguiente destino. En todo este proceso se mantiene una
+                            correlación, por lotes de madera procesada, con la codificación de origen, a partir de las
+                            guías de transporte forestal con las cuales se ingresó la materia prima al centro de
+                            transformación.</p>
+                          <p class="texto-acordion">La información de LOE-CTP es disponible tanto para
+                            la autoridad de la jurisdicción como para la autoridad nacional y permite conocer en
+                            tiempo real los productos disponibles, así como la disponibilidad de trozas que aún no han
+                            sido utilizadas y se encuentran dentro del CTP.</p>
+                          <p class="texto-acordion">El usuario que adopta el LOE-CTP emite las guías de
+                            transporte forestal a través de él y éstas cuentan con código QR que puede ser leído por
+                            la autoridad durante el recorrido de los productos a su siguiente destino con cualquier
+                            dispositivo en que se descargue la aplicación.</p>
                         </section>
+                        <div class="clear-both"></div>
+                      </section>
+                    </li>
+                    <li class="resumen1__item border-title-block" id="resp-bp-3" tabindex="-1">
+                      <section class="float-imagen--right">
+                        <img src="./assets/img/img/landingpage/sobre3-3.jpg" alt="imagen">
+                      </section>
+                      Calificación “Muy bueno” en el Reporte de Buen Comportamiento de Títulos Habilitantes, conducido por OSINFOR
+                      <section class="resumen1__item__info">
+                        <section>
+                          <p class="texto-acordion">El Reporte de Buen Comportamiento de Títulos Habilitantes
+                            elaborado por OSINFOR, se basa en información histórica de los resultados de las
+                            supervisiones realizadas por esta entidad desde el año 2015 a los títulos habilitantes, en
+                            las cuales se evalúa la implementación de sus planes de manejo y/o el cumplimiento de sus
+                            obligaciones contractuales.</p>
+                          <p class="texto-acordion">OSINFOR ha definido criterios para calificar el desempeño
+                            de los títulos habilitantes, siendo que los títulos habilitantes que tienen calificación
+                            “Muy bueno” son los que tienen un desempeño superior.</p>
+                        </section>
+                        <div class="clear-both"></div>
+                      </section>
+                    </li>
+                    <li class="resumen1__item" id="resp-bp-4" tabindex="-1">
+                      <section class="float-imagen--right">
+                        <img src="./assets/img/img/landingpage/sobre3-4.jpg" alt="imagen">
+                      </section>
+                      Certificación forestal voluntaria
+                      <section class="resumen1__item__info">
+                        <section>
+                          <p class="texto-acordion">La certificación forestal voluntaria es un proceso de
+                            evaluación, por una entidad independiente debidamente acreditada, de las operaciones de
+                            manejo de un área determinada de bosque y/o de la cadena de custodia, en función a
+                            determinados principios y criterios aceptados internacionalmente que garantizan el manejo
+                            forestal sostenible<sup>1</sup>.</p>
+                          <p class="texto-acordion">Con la finalidad de asegurar que el producto que adquiere
+                            el comprador o consumidor final procede de un bosque bajo manejo responsable, la
+                            certificación cuenta con estándares aplicables a toda la cadena de suministro de la madera,
+                            partiendo del bosque o plantación hasta el destino final del producto.</p>
+                          <p class="texto-acordion">El FSC (Forest Stewardship Council-FSC) es el esquema
+                            internacional de certificación forestal que opera en el Perú, aplicable en bosques y
+                            plantaciones (primer eslabón de la cadena de suministro de la madera), en centros de
+                            transformación primaria y secundaria de la madera, y en comercialización de productos
+                            maderables para la exportación (brokers y traders).</p>
+                          <p class="texto-acordion">Los estándares de certificación del FSC de interés para la
+                            plataforma son tres, siendo dos de ellos para bosques: la Certificación de Manejo Forestal
+                            (FM/COC) y la Certificación de Madera Controlada (CW/FM). Las plantaciones aplican también
+                            el estándar de Certificación de Manejo Forestal (FM/COC). El tercer estándar es el de Cadena
+                            de Custodia (COC), que se aplica a lo largo de la cadena de suministro de la madera, luego
+                            de que ésta ha salido del bosque o plantación hasta su destino final.</p>
+                        </section>
+                        <div class="clear-both"></div>
                       </section>
                     </li>
                   </ul>
-
+                  <p class="texto-indice">1 Artículo 5 del Reglamento para la Gestión forestal,
+                    aprobado por Decreto Supremo 018-2015—MINAGRI.</p>
                 </section>
 
-                <section class="acordion__three__resumen2">
-                  <section class="resumen2__info">
-                    <section class="resumen2__imagen">
-                      <img class="resumen2__img" src="./assets/img/slider/slider4.png" alt="imagen">
+                <section class="acordion-three-resumen2">
+                  <section class="acordion-three-resumen2-info" id="resp-bp-4-1" tabindex="-1">
+                    <section class="acordion-three-resumen2-info-imagen resumen2-info-imagen--img1 card-image">
                     </section>
-                    <section class="resumen2__textos">
-                      <div class="resumen2__titulos card-resaltar">
-                        <h2 class="resumen2__titulo">4.1. Certificación de Manejo Forestal (FM/COC)</h2>
+                    <section class="acordion-three-resumen2-info-data">
+                      <div class="acordion-three-resumen2-info-data-card card-resaltar">
+                        <h2>4.1. Certificación de Manejo Forestal (FM/COC)</h2>
                       </div>
-                      <p class="resumen2__texto">El estándar de Certificación de Manejo Forestal (FM/COC) es el estándar
+                      <p class="texto-acordion">El estándar de Certificación de Manejo Forestal (FM/COC) es el
+                        estándar
                         más alto de FSC
                         para certificación del manejo forestal y su alcance es tanto el manejo forestal como la
                         cadena de custodia del bosque, es decir, asegura la calidad del manejo y reporta el
@@ -402,23 +447,21 @@
                         que inicia con los árboles aprobados en el plan de manejo por la autoridad forestal
                         competente y llega hasta que las trozas salen del bosque o plantación para su posterior
                         procesamiento o comercialización.</p>
-                      <p class="resumen2__texto">Este certificado se otorga tanto a titulares de bosques como de
+                      <p class="texto-acordion">Este certificado se otorga tanto a titulares de bosques como de
                         plantaciones que,
                         mediante una auditoría independiente, demuestran que cumplen con el estándar de
                         Certificación de Manejo Forestal (FM/COC). El producto obtenido es Madera FSC 100%.</p>
                     </section>
                   </section>
-
-                  <section class="resumen2__info">
-                    <section class="resumen2__imagen">
-                      <img class="resumen2__img" src="./assets/img/slider/slider4.png" alt="imagen">
+                  <section class="acordion-three-resumen2-info" id="resp-bp-4-2" tabindex="-1">
+                    <section class="acordion-three-resumen2-info-imagen resumen2-info-imagen--img2 card-image">
                     </section>
-                    <section class="resumen2__textos">
-                      <div class="resumen2__titulos card-resaltar">
-                        <h2 class="resumen2__titulo">4.2. Certificación de madera controlada (CW/FM)</h2>
+                    <section class="acordion-three-resumen2-info-data">
+                      <div class="acordion-three-resumen2-info-data-card card-resaltar">
+                        <h2>4.2. Certificación de madera controlada (CW/FM)</h2>
                       </div>
-                      <p class="resumen2__texto">Es un estándar aplicable también a empresas o entidades de manejo
-                        forestal, cuyo fin es
+                      <p class="texto-acordion">Es un estándar aplicable también a empresas o entidades de
+                        manejo forestal, cuyo fin es
                         garantizar que la madera no procede de fuentes “inaceptables” o “controversiales”, es
                         decir, no corresponde a ninguna de las siguientes categorías: a) madera aprovechada
                         ilícitamente; b) madera aprovechada en violación de derechos tradicionales o civiles; c)
@@ -428,23 +471,21 @@
                         bosques en los que se planten árboles modificados genéticamente. Verifica también la
                         cadena de custodia del bosque, es decir, el recorrido de la madera desde el árbol en pie
                         hasta el punto de despacho hacia afuera del área de manejo.</p>
-                      <p class="resumen2__texto">Este certificado se otorga solo a titulares de bosques que, mediante
-                        una auditoría
+                      <p class="texto-acordion">Este certificado se otorga solo a titulares de bosques que,
+                        mediante una auditoría
                         independiente, demuestran que cumplen con el estándar de Madera Controlada
                         (CW/FM). El producto obtenido es Madera Controlada FSC.</p>
                     </section>
                   </section>
-
-                  <section class="resumen2__info">
-                    <section class="resumen2__imagen">
-                      <img class="resumen2__img" src="./assets/img/slider/slider4.png" alt="imagen">
+                  <section class="acordion-three-resumen2-info" id="resp-bp-4-3" tabindex="-1">
+                    <section class="acordion-three-resumen2-info-imagen resumen2-info-imagen--img3 card-image">
                     </section>
-                    <section class="resumen2__textos">
-                      <div class="resumen2__titulos card-resaltar">
-                        <h2 class="resumen2__titulo">4.3. Certificación de Cadena de Custodia (COC)</h2>
+                    <section class="acordion-three-resumen2-info-data">
+                      <div class="acordion-three-resumen2-info-data-card card-resaltar">
+                        <h2>4.3. Certificación de Cadena de Custodia (COC)</h2>
                       </div>
-                      <p class="resumen2__texto">Tiene como objetivo controlar el flujo de materiales certificados (FM o
-                        CW) a través de la
+                      <p class="texto-acordion">Tiene como objetivo controlar el flujo de materiales
+                        certificados (FM o CW) a través de la
                         cadena de suministro, de manera de evitar su contaminación o mezcla con material no
                         certificado durante los procesos de transporte, transformación industrial y
                         comercialización, permitiendo el rastreo de la madera desde el bosque a través de todo el
@@ -455,7 +496,6 @@
                         madera CW/FM, o FSC mixto cuando procede íntegramente de una mezcla de ambos.</p>
                     </section>
                   </section>
-
                 </section>
               </section>
             </section>
@@ -470,20 +510,21 @@
                       madera. Están también incluidos los regentes forestales que apoyan la implementación de buenas
                       prácticas por parte de sus regentados.</p>
                   </div>
-                  <section class="acordion-one-imagen--right">
-                    <img src="./assets/img/img/landingpage/sobre4.jpg" alt="imagen">
-                  </section>
-                  <section>
-                    <p class="acordion-one-data-texto">La cadena de suministro de la madera es el conjunto de estadíos
-                      por los que pasa la madera desde que se encuentra en el bosque o plantación, hasta que llega al
-                      consumidor final convertida en un producto consumible por éste. Los proveedores de madera con
-                      buenas prácticas en el comercio de madera que se visualizan en la presente plataforma se ubican en
-                      los distintos estadíos o eslabones de dicha cadena.</p>
-                    <p class="acordion-one-data-texto">Dentro de cada eslabón de la cadena de suministro de la madera
-                      existen diferentes proveedores. Para efectos de la plataforma, se han identificado los siguientes
-                      proveedores dentro de cada eslabón:</p>
-                  </section>
-                  <div class="clear-both"></div>
+                  <div class="acordion-four-resumen-data">
+                    <section class="acordion-four-resumen-info">
+                      <p class="texto-acordion">La cadena de suministro de la madera es el conjunto de estadíos
+                        por los que pasa la madera desde que se encuentra en el bosque o plantación, hasta que llega al
+                        consumidor final convertida en un producto consumible por éste. Los proveedores de madera con
+                        buenas prácticas en el comercio de madera que se visualizan en la presente plataforma se ubican
+                        en
+                        los distintos estadíos o eslabones de dicha cadena.</p>
+                      <p class="texto-acordion">Dentro de cada eslabón de la cadena de suministro de la madera
+                        existen diferentes proveedores. Para efectos de la plataforma, se han identificado los
+                        siguientes
+                        proveedores dentro de cada eslabón:</p>
+                    </section>
+                    <section class="acordion-four-resumen-data-imagen card-image"></section>
+                  </div>
                 </section>
 
                 <section class="acordion-four-flujo">
@@ -500,16 +541,14 @@
                           <h2>1.1. Título habilitante en bosque</h2>
                         </div>
                         <section class="eslabones-item-info-data">
-                          <section class="acordion-one-imagen--left">
-                            <img src="./assets/img/img/landingpage/sobre4-1-1.jpg" alt="imagen">
-                          </section>
-                          <section>
-                            <p class="acordion-one-data-texto">Los títulos habilitantes son actos de naturaleza
+                          <section class="eslabones-item-info-data-imagen1 card-image"></section>
+                          <section class="eslabones-item-info-data-info1">
+                            <p class="texto-acordion">Los títulos habilitantes son actos de naturaleza
                               administrativa mediante los cuales el Estado otorga a particulares el derecho de
                               aprovechamiento de los recursos forestales y de fauna silvestre y derecho a los beneficios
                               económicos procedentes de los servicios de los ecosistemas que se desprendan de su
-                              manejo2.</p>
-                            <p class="acordion-one-data-texto">Los títulos habilitantes en bosque incluidos en la
+                              manejo<sup>2</sup>.</p>
+                            <p class="texto-acordion">Los títulos habilitantes en bosque incluidos en la
                               plataforma comprenden el otorgamiento del derecho para el aprovechamiento sostenible de
                               los recursos forestales maderables existentes en el bosque y, de acuerdo a la modalidad de
                               aprovechamiento que les corresponde, son:</p>
@@ -544,21 +583,22 @@
                                   solicitud de un gobierno local.</span></li>
                             </ul>
                           </section>
-                          <div class="clear-both"></div>
                         </section>
+                        <p class="texto-indice">2 Artículo 60 de la Ley Forestal y de Fauna Silvestre, Ley N° 29763.</p>
+
                       </section>
                       <section class="eslabones-item-info">
                         <section class="eslabones-item-info-data">
-                          <section class="acordion-one-imagen--right">
-                            <img src="./assets/img/img/landingpage/sobre4-1-2.JPG" alt="imagen">
-                          </section>
-                          <section>
+                          <section class="eslabones-item-info-data-info2">
                             <div class="card-resaltar">
                               <h2>1.2. Plantación</h2>
                             </div>
-                            <p class="acordion-one-data-texto">Una plantación es un bosque instalado y cultivado por el hombre. En la presente plataforma se incluyen plantaciones con fines comerciales instaladas en predios privados y en tierras de comunidades nativas y campesinas, incluidas las plantaciones en macizo y en sistemas agroforestales.</p>
+                            <p class="texto-acordion">Una plantación es un bosque instalado y cultivado por el
+                              hombre. En la presente plataforma se incluyen plantaciones con fines comerciales
+                              instaladas en predios privados y en tierras de comunidades nativas y campesinas, incluidas
+                              las plantaciones en macizo y en sistemas agroforestales.</p>
                           </section>
-                          <div class="clear-both"></div>
+                          <section class="eslabones-item-info-data-imagen2 eslabones-item-info-data-imagen2-1 card-image"></section>
                         </section>
                       </section>
                     </li>
@@ -566,18 +606,18 @@
                       <span class="eslabones-item-titulo">Segundo eslabón: Madera con primera transformación</span>
                       <section class="eslabones-item-info">
                         <section class="eslabones-item-info-data">
-                          <section class="acordion-one-imagen--right">
-                            <img src="./assets/img/img/landingpage/sobre4-2-1.jpg" alt="imagen">
-                          </section>
-                          <section>
-                            <p class="acordion-one-data-texto">Dentro de este eslabón se considera un solo tipo de
+                          <section class="eslabones-item-info-data-info2">
+                            <p class="texto-acordion">Dentro de este eslabón se considera un solo tipo de
                               proveedor:</p>
                             <div class="card-resaltar">
                               <h2>2.1. Centro de transformación primaria</h2>
                             </div>
-                            <p class="acordion-one-data-texto">Instalación industrial o artesanal de procesamiento, fija o móvil (talleres, plantas, aserraderos portátiles u otros), que utiliza madera rolliza o en bruto como materia prima. Tiene como outputs la madera aserrada, madera debobinada y chips.</p>
+                            <p class="texto-acordion">Instalación industrial o artesanal de procesamiento, fija
+                              o móvil (talleres, plantas, aserraderos portátiles u otros), que utiliza madera rolliza o
+                              en bruto como materia prima. Tiene como outputs la madera aserrada, madera debobinada y
+                              chips.</p>
                           </section>
-                          <div class="clear-both"></div>
+                          <section class="eslabones-item-info-data-imagen2 eslabones-item-info-data-imagen2-2 card-image"></section>
                         </section>
                       </section>
                     </li>
@@ -585,17 +625,18 @@
                       <span class="eslabones-item-titulo">Tercer eslabón: Madera con segunda transformación</span>
                       <section class="eslabones-item-info">
                         <section class="eslabones-item-info-data">
-                          <section class="acordion-one-imagen--right">
-                            <img src="./assets/img/img/landingpage/sobre4-3-1.jpg" alt="imagen">
-                          </section>
-                          <section>
-                            <p class="acordion-one-data-texto">Para efectos de la plataforma, se considera un solo tipo de proveedor dentro de este eslabón:</p>
+                          <section class="eslabones-item-info-data-info2">
+                            <p class="texto-acordion">Para efectos de la plataforma, se considera un solo tipo
+                              de proveedor dentro de este eslabón:</p>
                             <div class="card-resaltar">
                               <h2>3.1. Centro de transformación secundaria</h2>
                             </div>
-                            <p class="acordion-one-data-texto">Instalación industrial o artesanal de procesamiento, fija o móvil (talleres, plantas, equipos portátiles o móviles), que utiliza como materia prima productos maderables de primera o segunda transformación para obtener un producto con un mayor procesamiento.</p>
+                            <p class="texto-acordion">Instalación industrial o artesanal de procesamiento, fija
+                              o móvil (talleres, plantas, equipos portátiles o móviles), que utiliza como materia prima
+                              productos maderables de primera o segunda transformación para obtener un producto con un
+                              mayor procesamiento.</p>
                           </section>
-                          <div class="clear-both"></div>
+                          <section class="eslabones-item-info-data-imagen2 eslabones-item-info-data-imagen2-3 card-image"></section>
                         </section>
                       </section>
                     </li>
@@ -603,21 +644,24 @@
                       <span class="eslabones-item-titulo">Cuarto eslabón: Comercialización de madera</span>
                       <section class="eslabones-item-info">
                         <section class="eslabones-item-info-data">
-                          <section class="acordion-one-imagen--right">
-                            <img src="./assets/img/img/landingpage/sobre4-4-1.jpg" alt="imagen">
-                          </section>
-                          <section>
-                            <p class="acordion-one-data-texto">Si bien la comercialización de la madera se encuentra incluida en el eslabón del tipo de producto (madera rolliza, madera con primera transformación, madera con segunda transformación), para efectos de la plataforma se ha considerado pertinente agrupar la comercialización de la madera de todos los eslabones en uno solo, debido a que un mismo negocio puede comercializar madera de más de un eslabón. Para estos efectos se define como único tipo de proveedor en este eslabón al “Comercializador”.</p>
+                          <section class="eslabones-item-info-data-info2">
+                            <p class="texto-acordion">Si bien la comercialización de la madera se encuentra
+                              incluida en el eslabón del tipo de producto (madera rolliza, madera con primera
+                              transformación, madera con segunda transformación), para efectos de la plataforma se ha
+                              considerado pertinente agrupar la comercialización de la madera de todos los eslabones en
+                              uno solo, debido a que un mismo negocio puede comercializar madera de más de un eslabón.
+                              Para estos efectos se define como único tipo de proveedor en este eslabón al
+                              “Comercializador”.</p>
                             <div class="card-resaltar">
                               <h2>4.1. Comercializador</h2>
                             </div>
-                            <p class="acordion-one-data-texto">Persona natural o jurídica que compra y vende madera
+                            <p class="texto-acordion">Persona natural o jurídica que compra y vende madera
                               y/o sus productos, sin
                               realizar ninguna transformación de estos productos, ni directamente, ni a
                               través de servicios de terceros. Para efectos de la plataforma, se incluyen los
                               siguientes tipos de comercializadores:</p>
                           </section>
-                          <div class="clear-both"></div>
+                          <section class="eslabones-item-info-data-imagen2 eslabones-item-info-data-imagen2-4 card-image"></section>
                         </section>
                       </section>
                     </li>
@@ -627,7 +671,8 @@
                 <section class="acordion-four-bibliografia">
                   <section class="bibliografia-item">
                     <section class="bibliografia__imagen">
-                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-factory.png" alt="bibliografia">
+                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-factory.png"
+                        alt="bibliografia">
                     </section>
                     <section class="bibliografia__data">
                       <h2 class="bibliografia__titulo">Centro de comercialización:</h2>
@@ -644,7 +689,8 @@
 
                   <section class="bibliografia-item">
                     <section class="bibliografia__imagen">
-                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-bank.png" alt="bibliografia">
+                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-bank.png"
+                        alt="bibliografia">
                     </section>
                     <section class="bibliografia__data">
                       <h2 class="bibliografia__titulo">Depósito o centro de acopio:</h2>
@@ -656,7 +702,8 @@
 
                   <section class="bibliografia-item">
                     <section class="bibliografia__imagen">
-                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-car.png" alt="bibliografia">
+                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-car.png"
+                        alt="bibliografia">
                     </section>
                     <section class="bibliografia__data">
                       <h2 class="bibliografia__titulo">Distribuidor:</h2>
@@ -667,7 +714,8 @@
 
                   <section class="bibliografia-item">
                     <section class="bibliografia__imagen">
-                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-ship.png" alt="bibliografia">
+                      <img class="bibliografia__img" src="./assets/img/img/landingpage/figures/round-ship.png"
+                        alt="bibliografia">
                     </section>
                     <section class="bibliografia__data sin-borde">
                       <h2 class="bibliografia__titulo">Broker o trader (exportador):</h2>
